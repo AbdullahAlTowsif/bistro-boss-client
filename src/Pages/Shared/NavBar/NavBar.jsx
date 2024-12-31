@@ -21,13 +21,14 @@ const NavBar = () => {
             user ?
                 <>
                     <button onClick={handleLogOut} className="btn btn-ghost">Logout</button>
+                    <span>{user?.displayName}</span>
                 </> :
                 <>
                     <li><Link to="/login">Login</Link></li>
                 </>
         }
     </>
-    
+
     return (
         <div>
             <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl bg-black text-white">
