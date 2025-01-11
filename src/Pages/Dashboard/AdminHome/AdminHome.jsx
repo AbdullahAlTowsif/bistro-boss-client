@@ -36,6 +36,7 @@ const AdminHome = () => {
     };
 
     const TriangleBar = (props) => {
+        // eslint-disable-next-line react/prop-types
         const { fill, x, y, width, height } = props;
 
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
